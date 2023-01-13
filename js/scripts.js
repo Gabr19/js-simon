@@ -19,19 +19,34 @@ for (let i = 1 ; i <=5 ; i++){
     }
 
     number.push(randomNumber)
-    console.log(randomNumber)
-    // let num = document.write(randomNumber)
+    // console.log(randomNumber)
 
 }
-const gridContainer = document.getElementById('grid-container').innerHTML = number
+
+
+let gridContainer = document.getElementById('grid-container').innerHTML = number
+
+
+function remove (){
+    let gridContainer = document.getElementById('grid-container').innerHTML = ""
+
+}
+
+let timeOutDue = setTimeout (remove, 10000)
 
 
 function ciclo (){
     let u = parseInt(prompt('inserisci il primo numero'))
+    console.log(u)
     let d = parseInt(prompt('inserisci il secondo numero'))
+    console.log(d)
     let t = parseInt(prompt('inserisci il terzo numero'))
+    console.log(t)
     let q = parseInt(prompt('inserisci il quarto numero'))
+    console.log(q)
     let c = parseInt(prompt('inserisci il quinto numero'))
+    console.log(c)
+
 
     if(number.includes(u)){
         alert('hai indovinato il primo numero')
@@ -60,7 +75,7 @@ function ciclo (){
     }
 }
 
-let timeOut = setTimeout (ciclo, 3000)
+let timeOut = setTimeout (ciclo, 10100)
 
 
 
