@@ -16,25 +16,57 @@ let container = gridContainer.append(number)
 
 
 console.log(number)
-gridContainer.append(number)
 
+for (let i = 1 ; i <=5 ; i++){
+
+    let randomNumber = getRandomNumber(1, 100);
+
+    while (number.includes(randomNumber)){
+        randomNumber = getRandomNumber(1, 100)
+    }
+
+    number.push(randomNumber)
+    console.log(randomNumber)
+}
 
 
 function ciclo (){
-    for (let i = 1 ; i <=5 ; i++){
+    let u = prompt('inserisci il primo numero')
+    let d = prompt('inserisci il secondo numero')
+    let t = prompt('inserisci il terzo numero')
+    let q = prompt('inserisci il quarto numero')
+    let c = prompt('inserisci il quinto numero')
 
-        let randomNumber = getRandomNumber(1, 100);
-
-        while (number.includes(randomNumber)){
-            randomNumber = getRandomNumber(1, 100)
-        }
-
-        number.push(randomNumber)
-        console.log(randomNumber)
+    if(number.includes(u)){
+        alert('hai indovinato il primo numero')
+    } else {
+        alert('primo numero sbagliato')
+    }
+    if(number.includes(d)){
+        alert('hai indovinato il secondo numero')
+    } else {
+        alert('secondo numero sbagliato')
+    }
+    if(number.includes(u)){
+        alert('hai indovinato il terzo numero')
+    } else {
+        alert('terzo numero sbagliato')
+    }
+    if(number.includes(d)){
+        alert('hai indovinato il quarto numero')
+    } else {
+        alert('quarto numero sbagliato')
+    }
+    if(number.includes(u)){
+        alert('hai indovinato il quinto numero')
+    } else {
+        alert('quinto numero sbagliato')
     }
 }
 
-setTimeout (ciclo(), 1000)
+let timeOut = setTimeout (ciclo, 3000)
+
+
 
 
 
