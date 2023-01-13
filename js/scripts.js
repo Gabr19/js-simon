@@ -31,11 +31,11 @@ for (let i = 1 ; i <=5 ; i++){
 
 
 function ciclo (){
-    let u = prompt('inserisci il primo numero')
-    let d = prompt('inserisci il secondo numero')
-    let t = prompt('inserisci il terzo numero')
-    let q = prompt('inserisci il quarto numero')
-    let c = prompt('inserisci il quinto numero')
+    let u = parseInt(prompt('inserisci il primo numero'))
+    let d = parseInt(prompt('inserisci il secondo numero'))
+    let t = parseInt(prompt('inserisci il terzo numero'))
+    let q = parseInt(prompt('inserisci il quarto numero'))
+    let c = parseInt(prompt('inserisci il quinto numero'))
 
     if(number.includes(u)){
         alert('hai indovinato il primo numero')
