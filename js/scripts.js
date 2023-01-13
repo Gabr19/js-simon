@@ -7,14 +7,7 @@
 function getRandomNumber (min, max){
     return Math.floor(Math.random() * (max - min)) + min;
 }
-
-const gridContainer = document.getElementById('grid-container')
-
-
 const number =[];
-let container = gridContainer.append(number)
-
-
 console.log(number)
 
 for (let i = 1 ; i <=5 ; i++){
@@ -27,7 +20,10 @@ for (let i = 1 ; i <=5 ; i++){
 
     number.push(randomNumber)
     console.log(randomNumber)
+    // let num = document.write(randomNumber)
+
 }
+const gridContainer = document.getElementById('grid-container').innerHTML = number
 
 
 function ciclo (){
@@ -47,17 +43,17 @@ function ciclo (){
     } else {
         alert('secondo numero sbagliato')
     }
-    if(number.includes(u)){
+    if(number.includes(t)){
         alert('hai indovinato il terzo numero')
     } else {
         alert('terzo numero sbagliato')
     }
-    if(number.includes(d)){
+    if(number.includes(q)){
         alert('hai indovinato il quarto numero')
     } else {
         alert('quarto numero sbagliato')
     }
-    if(number.includes(u)){
+    if(number.includes(c)){
         alert('hai indovinato il quinto numero')
     } else {
         alert('quinto numero sbagliato')
